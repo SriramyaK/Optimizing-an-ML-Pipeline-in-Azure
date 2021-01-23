@@ -38,7 +38,7 @@ Early termination improves computational efficiency by automatically terminating
 
 **Bandit Policy** terminates runs where the primary metrics is not within the specified slack amount compared to the best performing run.\
 **Median Stopping Policy** terminates runs with primary metric less than the median of averages.\
-**Truncation Selection Policy** cancels a percentage of lowest performing runs at each evaluation interval based on the defined primary metric.\
+**Truncation Selection Policy** cancels a percentage of lowest performing runs at each evaluation interval based on the defined primary metric.
 
 The reason for picking Bandit policy with smaller allowable slack is mainly to gain aggressive savings compared to other early stopping policies.
 
@@ -66,7 +66,7 @@ Traditional machine learning model development like the one we used above is res
 
 Model Explanation data is used to obtain the -
 
-global importance values: [0.6214430958945745, 0.38255818244792145, 0.15170718927820648, 0.12880138313913514]
+global importance values: [0.6214430958945745, 0.38255818244792145, 0.15170718927820648, 0.12880138313913514]\
 global importance features: ['duration', 'nr.employed', 'euribor3m', 'emp.var.rate']
 
 ## Pipeline comparison
