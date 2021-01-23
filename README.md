@@ -36,9 +36,9 @@ Grid sampling can be used if we have budget for exhaustive search  over the sear
 
 Early termination improves computational efficiency by automatically terminating poorly performing runs.
 
-**Bandit Policy** terminates runs where the primary metrics is not within the specified slack amount compared to the best performing run.\n
-**Median Stopping Policy** terminates runs with primary metric less than the median of averages.\n
-**Truncation Selection Policy** cancels a percentage of lowest performing runs at each evaluation interval based on the defined primary metric.\n
+**Bandit Policy** terminates runs where the primary metrics is not within the specified slack amount compared to the best performing run.\br
+**Median Stopping Policy** terminates runs with primary metric less than the median of averages.\br
+**Truncation Selection Policy** cancels a percentage of lowest performing runs at each evaluation interval based on the defined primary metric.\br
 
 The reason for picking Bandit policy with smaller allowable slack is mainly to gain aggressive savings compared to other early stopping policies.
 
